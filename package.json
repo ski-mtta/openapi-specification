@@ -1,0 +1,25 @@
+{
+  "name": "skimtta-oas",
+  "version": "1.0.0",
+  "description": "Open API Specification for MTTA Web API services",
+  "main": "./dist/openapi.json",
+  "bin": {
+    "skimtta:oas": "./bin/spec.js"
+  },
+  "scripts": {
+    "prepare": "npm run gen:spec",
+    "build": "npx tsc",
+    "gen:spec": "npm run build && node ./bin/spec.js"
+  },
+  "author": "Ryan Tate <ryan.michael.tate@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.0.4",
+    "prettier": "^1.17.1",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "@smartrecruiters/openapi-schemas-validator": "^0.2.0",
+    "jsonfile": "^5.0.0"
+  }
+}
