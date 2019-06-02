@@ -7,7 +7,7 @@
     "skimtta-gen-oas": "./bin/spec.js"
   },
   "scripts": {
-    "prepare": "npm run gen:spec",
+    "prepare": "npm run build",
     "build": "npx tsc",
     "gen:spec": "npm run build && node ./bin/spec.js"
   },

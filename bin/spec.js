@@ -3,8 +3,9 @@
 const { SchemaValidator } = require('@smartrecruiters/openapi-schemas-validator')
 const jsonfile = require('jsonfile');
 
-const SPEC = require(`${__dirname}/../dist/index.js`).default;
 const OUTPUT_DIRECTORY = `${__dirname}/../dist`;
+const SPEC = require(`${OUTPUT_DIRECTORY}/index.js`).default;
+
 const FILE_NAME = 'openapi.json';
 const FILE_PATH = `${OUTPUT_DIRECTORY}/${FILE_NAME}`;
 
