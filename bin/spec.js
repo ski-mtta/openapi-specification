@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 const { SchemaValidator } = require('@smartrecruiters/openapi-schemas-validator')
 const jsonfile = require('jsonfile');
 
-const SPEC = require('../dist/index.js').default;
-const OUTPUT_DIRECTORY = `${process.cwd()}/dist`;
+const SPEC = require(`${__dirname}/../dist/index.js`).default;
+const OUTPUT_DIRECTORY = `${__dirname}/../dist`;
 const FILE_NAME = 'openapi.json';
 const FILE_PATH = `${OUTPUT_DIRECTORY}/${FILE_NAME}`;
 
