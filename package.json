@@ -4,7 +4,7 @@
   "description": "Open API Specification for MTTA Web API services",
   "main": "./dist/openapi.json",
   "bin": {
-    "skimtta:oas": "./bin/spec.js"
+    "skimtta-gen-oas": "./bin/spec.js"
   },
   "scripts": {
     "prepare": "npm run gen:spec",
