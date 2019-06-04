@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@smartrecruiters/openapi-schemas-validator": "^0.2.0",
-    "jsonfile": "^5.0.0"
+    "jsonfile": "^5.0.0",
+    "openapi-schema-validation": "^0.4.2"
   }
 }

@@ -20,7 +20,8 @@ export default {
     [PATROLLERS_PATH]: {
         summary: "Patroller API Base Url",
         description: "Patroller Web APIs",
-        post: require("./post").default
+        post: require("./post").default,
+        get: require("./get").default
     },
     [PATROLLERS_ID_PATH]: {},
     [PATROLLERS_SCHEDULE]: {},
