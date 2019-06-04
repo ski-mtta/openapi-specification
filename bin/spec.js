@@ -16,7 +16,7 @@ const result = validate(SPEC, 3);
 if (result.errors.length) {
     console.error("Specification is invalid");
     result.errors.map((error) => {
-        console.log('error', error);
+        console.log('error', JSON.stringify(error, null, 2));
     })
 } else {
     jsonfile.writeFile(FILE_PATH, SPEC).then(() => {
