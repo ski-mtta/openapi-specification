@@ -5,6 +5,7 @@ const schema = {
     type: "string",
     title: "Patroller ID",
     description,
+    format: "uuid",
     example: '00000000-0000-0000-0000-000000000000'
 };
 
