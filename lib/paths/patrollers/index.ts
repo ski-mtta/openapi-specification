@@ -1,5 +1,5 @@
 const PATROLLERS_PATH = `/patrollers`;
-const PATROLLERS_ID_PATH = `${PATROLLERS_PATH}/{id}`;
+const PATROLLERS_ID_PATH = `${PATROLLERS_PATH}/{patroller_id}`;
 
 const PATROLLERS_SCHEDULE = `${PATROLLERS_ID_PATH}/schedule`;
 const PATROLLERS_SCHEDULE_ID = `${PATROLLERS_SCHEDULE}/{schedule_id}`;
@@ -20,10 +20,13 @@ export default {
     [PATROLLERS_PATH]: {
         summary: "Patroller API Base Url",
         description: "Patroller Web APIs",
-        post: require("./post").default,
+        post: require("./post").default
+    },
+    [PATROLLERS_ID_PATH]: {
+        summary: "Patrollers API Patroller Resources",
+        description: "Patroller Web APIs",
         get: require("./get").default
     },
-    [PATROLLERS_ID_PATH]: {},
     [PATROLLERS_SCHEDULE]: {},
     [PATROLLERS_SCHEDULE_ID]: {},
     [PATROLLERS_DUTY]: {},
