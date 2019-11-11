@@ -1,15 +1,15 @@
-const description = "Ski Patrol Number";
+const description = "Patroller overnight guest count, in addition to patroller.";
 
 const schema = {
-    title: "Ski Patrol Number",
+    title: "Patroller Overnight Guest Count",
     type: "integer",
     format: "int32",
-    example: 59,
+    example: 1,
     description
 }
 
 export const parameter = {
-    name: "sp_number",
+    name: "guest_count",
     in: "path",
     required: true,
     description,

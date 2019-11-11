@@ -1,5 +1,12 @@
 import schemas from "./schemas";
 
 export default {
-    schemas
+    schemas,
+    "securitySchemes": {
+        "bearerAuth": {
+            "type": "http",
+            "scheme": "bearer",
+            "bearerFormat": "JWT"
+        }
+    }
 };

@@ -3,17 +3,16 @@ import last_name from '../properties/last_name';
 import sp_number from '../properties/sp_number';
 import password from '../properties/password';
 import email from '../properties/email';
-import phone_number from '../properties/phone_number';
 
 export default {
     type: "object",
     required: [
-        "first_name", 
+        "first_name",
         "last_name",
         "sp_number",
         "password",
         "email",
-        "phone_number",
+        "primary_phone",
         "physical_address",
     ],
     properties: {
@@ -22,7 +21,12 @@ export default {
         sp_number,
         password,
         email,
-        phone_number,
+        primary_phone: {
+            $ref: "#/components/schemas/phone_number"
+        },
+        secondary_phone: {
+            $ref: "#/components/schemas/phone_number"
+        },
         physical_address: {
             $ref: "#/components/schemas/physical_address"
         }

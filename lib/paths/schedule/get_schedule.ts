@@ -1,23 +1,26 @@
-import { parameter } from "../../components/schemas/properties/patroller_id";
+import { parameter } from "../../components/schemas/properties/sp_number";
 
 export default {
     tags: ["Patrollers"],
-    summary: "Get Patroller",
+    summary: "Get Patroller Schedule",
     description:
-        "Get patroller",
-    operationId: "getPatroller",
+        "Get patroller schedule",
+    operationId: "getPatrollerSchedule",
     parameters: [
         parameter
+    ],
+    security: [
+        { "bearerAuth": [] }
     ],
     "x-swagger-router-controller": "controllers/patrollers",
     responses: {
         200: {
-            description: "Successfully created a new ski patroller",
+            description: "Successfully returned patroller schedule",
             content: {
                 "application/json": {
                     schema: {
                         $ref:
-                            "#/components/schemas/patrollers_get_response"
+                            "#/components/schemas/schedule_get_response"
                     }
                 }
             }

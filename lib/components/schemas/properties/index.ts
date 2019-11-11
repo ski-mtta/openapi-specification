@@ -11,6 +11,13 @@ import sp_number from "./sp_number";
 import state from "./state";
 import street_address from "./street_address";
 import zip_code from "./zip_code";
+import attendee from "./attendee";
+import location from "./location";
+import is_patrol_type from "./is_patrol_type";
+import attendees from "./attendees";
+import guest_count from "./guest_count";
+import comment from "./comment";
+import date from "./date";
 
 
 export default {
@@ -27,4 +34,11 @@ export default {
     state,
     street_address,
     zip_code,
+    attendee,
+    location,
+    is_patrol_type,
+    attendees,
+    guest_count,
+    comment,
+    date,
 };

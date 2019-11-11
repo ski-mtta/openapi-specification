@@ -7,10 +7,7 @@ export default {
     type: "object",
     description: "Physical Address for Ski Patroller",
     required: [
-        "street_address",
         "city",
-        "state",
-        "zip_code",
     ],
     properties: {
         street_address,

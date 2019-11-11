@@ -1,28 +1,36 @@
-import patroller_id from '../properties/patroller_id';
 import first_name from '../properties/first_name';
 import last_name from '../properties/last_name';
 import sp_number from '../properties/sp_number';
 import email from '../properties/email';
-import phone_number from '../properties/phone_number';
+import access_token from '../properties/access_token';
 
 export default {
     type: "object",
     required: [
-        "patroller_id",
-        "first_name", 
+        "id",
+        "first_name",
         "last_name",
         "sp_number",
         "email",
-        "phone_number",
+        "primary_phone",
         "physical_address",
+        "access_token"
     ],
     properties: {
-        patroller_id,
+        access_token,
+        id: {
+            $ref: "#/components/schemas/patroller_id"
+        },
         first_name,
         last_name,
         sp_number,
         email,
-        phone_number,
+        primary_phone: {
+            $ref: "#/components/schemas/phone_number"
+        },
+        secondary_phone: {
+            $ref: "#/components/schemas/phone_number"
+        },
         physical_address: {
             $ref: "#/components/schemas/physical_address"
         },
