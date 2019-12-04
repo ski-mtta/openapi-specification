@@ -5,5 +5,5 @@ import patrollers from "./patrollers";
 export default {
     ...authentication,
     ...directors,
-    ...patrollers
+    ...patrollers,
 };

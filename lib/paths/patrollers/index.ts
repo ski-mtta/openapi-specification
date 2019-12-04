@@ -31,8 +31,8 @@ export default {
     [PATROLLERS_SCHEDULE]: {
         summary: "Patrollers API Patroller Schedule Resources",
         description: "Patroller Web APIs",
-        get: require("../schedule/get_schedule").default,
-        post: require("../schedule/post_schedule").default
+        get: require("./get_schedule").default,
+        post: require("./post_schedule").default
     },
     [PATROLLERS_SCHEDULE_ID]: {},
     [PATROLLERS_DUTY]: {},
