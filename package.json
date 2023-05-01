@@ -19,7 +19,7 @@
     "typescript": "^3.5.1"
   },
   "dependencies": {
-    "@smartrecruiters/openapi-schemas-validator": "^0.2.0",
+    "@smartrecruiters/openapi-schemas-validator": "^0.3.1",
     "jsonfile": "^5.0.0",
     "openapi-schema-validation": "^0.4.2"
   }
